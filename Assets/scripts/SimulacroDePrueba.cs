@@ -12,6 +12,8 @@ public class SimulacroDePrueba : MonoBehaviour
     int racionPerros = 400;
     int racionPerrosGrande = 700;
     int relacionAnimalActual;
+    float costoAlimenticio;
+    float precioPorCienGramos = 80;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +33,8 @@ public class SimulacroDePrueba : MonoBehaviour
         //3. Procesamiento de datos 
         gramosComidaTotal = relacionAnimalActual + cantidadDias;
         //4. Mostrar resultado
-
         Debug.Log("Para ese periodo se necesitan " + gramosComidaTotal + " gramos de alimento ");
+        Debug.Log("Costo alimento" + costoAlimenticio);
     }
 
     // Update is called once per frame
