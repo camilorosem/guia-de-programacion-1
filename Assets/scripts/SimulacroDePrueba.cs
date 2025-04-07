@@ -19,16 +19,23 @@ public class SimulacroDePrueba : MonoBehaviour
     void Start()
     {
         //2. Ingreso de datos (mas adelante )
-        if (codigoAnimal == "G");
+        if (codigoAnimal == "G")
         {
             relacionAnimalActual = racionGatos;
-        } else if (codigoAnimal == "PP");
+        } 
+          else if (codigoAnimal == "PP")
         {
             relacionAnimalActual = racionPerros;
-        }else if (codigoAnimal = racionPerrosGrande);
+        }
+          else if (codigoAnimal == "PG")
         {
             relacionAnimalActual = racionPerrosGrande;
         }
+
+        if (cantidadDias > 3 )
+        {
+            Debug.Log("Cantidad de dias no valida");
+        }    
 
         //3. Procesamiento de datos 
         gramosComidaTotal = relacionAnimalActual + cantidadDias;
